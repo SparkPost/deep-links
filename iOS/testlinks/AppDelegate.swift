@@ -77,6 +77,11 @@ class Redirect : NSObject {
     
     func makeRequest(url: URL, callback: @escaping (URL?) -> ()) {
         let task = self.session?.dataTask(with: url) {(data, response, error) in
+            guard error == nil else {
+                print(error!)
+                return
+            }
+            
             guard response != nil else {
                 return
             }
