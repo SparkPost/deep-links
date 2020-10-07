@@ -1,8 +1,6 @@
 # iOS / Swift code example
 
-An example `apple-app-site-association` file is included. Update to match your app ID and bundle ID.
-
-This basic example app responds to Deep Links that are tracked via your ESP (such as SparkPost), by following the 302 redirect, obtaining the original surfacing the received (tracked) link, and displaying both of these on the app.
+Responds to Deep Links that are tracked via your ESP (such as SparkPost), by following the 302 redirect, obtaining the original surfacing the received (tracked) link, and displaying both of these on the app.
 
 This is more involved than simply fetching with `URLSession.shared.dataTask`. It is more efficient because it doesn't fetch the resolved web-page (which could be large).
 
@@ -22,9 +20,12 @@ This is more involved than simply fetching with `URLSession.shared.dataTask`. It
 The return mechanism must use a callback function, because `dataTask` is async.
 
 `ViewController.swift`:
-- Basic file, surfacing two `UILabels` to display the incoming (tracked) result URL and the original resolved URL.
+- Basic file, surfacing two `UILabels` that display the incoming (tracked) result URL and the original resolved URL.
 
-## Example app running
+`apple-app-site-association`
+- Update to match your app ID and bundle ID.
+
+## Demonstration
 
 Email can contain a mix of tracked deep links and tracked regular links that open in browser - see example [here](anim.md).
 
