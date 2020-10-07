@@ -1,1 +1,1 @@
-![](../img/iOS-example-app.gif)
+<img src ="../img/iOS-example-app.gif" alt="Animation of clicking two iOS deep links and a standard link" width=600/>
