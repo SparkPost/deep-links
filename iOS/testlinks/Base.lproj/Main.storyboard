@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testlinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="original URL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv6-2G-4hL">
+                                <rect key="frame" x="16" y="173.5" width="382" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waiting .." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BHm-mX-92V">
+                                <rect key="frame" x="16" y="145" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sRx-mS-Kp8">
+                                <rect key="frame" x="16" y="48" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sRx-mS-Kp8" secondAttribute="height" multiplier="191:26" id="IXC-Ag-XAN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waiting .." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MUl-52-GmM">
+                                <rect key="frame" x="16" y="202.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL received:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isT-bw-R6U">
+                                <rect key="frame" x="16" y="116" width="382" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cv6-2G-4hL" firstAttribute="top" secondItem="BHm-mX-92V" secondAttribute="bottom" constant="8" id="BhU-Gk-cEs"/>
+                            <constraint firstAttribute="trailing" secondItem="cv6-2G-4hL" secondAttribute="trailing" constant="16" id="CMJ-gb-eIW"/>
+                            <constraint firstItem="BHm-mX-92V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="CcX-qh-2JG"/>
+                            <constraint firstItem="MUl-52-GmM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Cqy-hf-M6e"/>
+                            <constraint firstItem="BHm-mX-92V" firstAttribute="top" secondItem="isT-bw-R6U" secondAttribute="bottom" constant="8" id="Vf1-Ka-VBD"/>
+                            <constraint firstItem="isT-bw-R6U" firstAttribute="top" secondItem="sRx-mS-Kp8" secondAttribute="bottom" constant="16" id="ZLx-Hp-DOQ"/>
+                            <constraint firstAttribute="trailing" secondItem="isT-bw-R6U" secondAttribute="trailing" constant="16" id="dq5-M5-7uA"/>
+                            <constraint firstItem="isT-bw-R6U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ihg-9L-TSt"/>
+                            <constraint firstItem="sRx-mS-Kp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="kXR-xb-dLc"/>
+                            <constraint firstItem="sRx-mS-Kp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="kZh-Pb-Oa7"/>
+                            <constraint firstItem="cv6-2G-4hL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="meq-H9-Agj"/>
+                            <constraint firstAttribute="trailing" secondItem="BHm-mX-92V" secondAttribute="trailing" constant="16" id="oft-2u-ZXM"/>
+                            <constraint firstAttribute="trailing" secondItem="sRx-mS-Kp8" secondAttribute="trailing" constant="16" id="p1k-FZ-tqy"/>
+                            <constraint firstAttribute="trailing" secondItem="MUl-52-GmM" secondAttribute="trailing" constant="16" id="ryv-Rf-jz0"/>
+                            <constraint firstItem="MUl-52-GmM" firstAttribute="top" secondItem="cv6-2G-4hL" secondAttribute="bottom" constant="8" id="sfN-ZK-ngH"/>
+                            <constraint firstItem="sRx-mS-Kp8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="zLr-Qq-Mxm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="originalURL" destination="MUl-52-GmM" id="sKd-BW-itY"/>
+                        <outlet property="result" destination="BHm-mX-92V" id="X29-s3-d9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="121.20535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="200" height="52"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
