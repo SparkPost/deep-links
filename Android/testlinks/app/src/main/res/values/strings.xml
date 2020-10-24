@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">testlinks</string>
+    <string name="title">URL received:</string>
+    <string name="result">waiting ..</string>
+    <string name="original_url">Original URL:</string>
+    <string name="originalURL">waiting ..</string>
+    <string name="title2">Original URL:</string>
+    <string name="logo">Logo</string>
+</resources>
