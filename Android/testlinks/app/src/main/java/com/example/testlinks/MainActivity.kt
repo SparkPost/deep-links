@@ -35,9 +35,8 @@ class MainActivity : AppCompatActivity() {
             val res : TextView = findViewById(R.id.result)
             res.text = appLinkData.toString()
 
-            // Show this on our simple example app
+            // Show this on our simple example app. The function updates the TextView itself
             makeRequest(appLinkData)
-            val originalUrl : TextView = findViewById(R.id.originalURL)
         }
     }
 
@@ -61,9 +60,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call, response: Response) {
-                val originalURL = response.headers["Location"]
-                if (originalURL != null) {
-                    Log.i("onResponse", originalURL)
+                val locationURL = response.headers["Location"]
+                if (locationURL != null) {
+                    Log.i("onResponse", locationURL)
+                    val originalUrl : TextView = findViewById(R.id.originalURL)
+                    originalUrl.text = locationURL
                 }
             }
         })
