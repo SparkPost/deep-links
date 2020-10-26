@@ -1,0 +1,1 @@
+<img src ="../img/android-example-app.gif" alt="Animation of clicking two deep app links and a standard link" width=600/>

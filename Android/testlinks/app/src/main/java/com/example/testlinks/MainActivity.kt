@@ -62,7 +62,8 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call, response: Response) {
                 val locationURL = response.headers["Location"]
                 if (locationURL != null) {
-                    Log.i("onResponse", locationURL)
+                    Log.i("locationURL", locationURL)
+                    // Show this on our simple example app
                     val originalUrl : TextView = findViewById(R.id.originalURL)
                     originalUrl.text = locationURL
                 }

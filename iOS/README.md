@@ -1,6 +1,11 @@
 # iOS / Swift code example
 
-Responds to Deep Links that are tracked via your ESP (such as SparkPost), by following the 302 redirect, obtaining the original surfacing the received (tracked) link, and displaying both of these on the app.
+Responds to Deep Links that are tracked via your ESP (such as SparkPost):
+
+- follows the 302 redirect
+- obtains the original URL from the `Location` header
+- displays the received (tracked) URL and original URL on the app.
+
 
 This is more involved than simply fetching with `URLSession.shared.dataTask`. It is more efficient because it doesn't fetch the resolved web-page (which could be large).
 
