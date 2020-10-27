@@ -64,7 +64,7 @@
 
                 <data
                     android:scheme="https"
-                    android:host="sparkpostdev.com"
+                    android:host="cf-track.sparkpostdev.com"
                     android:pathPrefix="/f/open-in-app" />
             </intent-filter>
         </activity>
