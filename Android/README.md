@@ -2,7 +2,7 @@
 
 Responds to Deep Links that are tracked via your ESP (such as SparkPost):
 
-- follows the 302 redirect
+- GETs the tracked link, without following the 302 redirect to the final web page
 - obtains the original URL from the `Location` header
 - displays the received (tracked) URL and original URL on the app.
 
